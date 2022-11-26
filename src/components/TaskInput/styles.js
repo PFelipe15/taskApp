@@ -5,15 +5,21 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     height: 137,
-    marginBottom: 60,
+    marginTop: 40,
+  },
+  btnTask: {
+    display: "flex",
+    width: "100%",
   },
 
   taskTitleContainer: {
-    width: 200,
+    width: "100%",
+    maxWidth: "100%",
     height: 35,
     backgroundColor: "rgba(0, 0, 0, 0.6)",
     borderRadius: 14,
     marginBottom: 3,
+    paddingHorizontal: 8,
   },
 
   titleTask: {
@@ -22,9 +28,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   boxTask: {
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
     height: 120,
-    width: "98%",
+    width: 390,
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
     borderRadius: 15,
     justifyContent: "center",
   },
@@ -33,6 +39,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     fontSize: 20,
+    paddingHorizontal: 3,
   },
 });
 

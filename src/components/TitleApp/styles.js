@@ -3,9 +3,10 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   header: {
     width: "100%",
-    height: 171,
+    height: 100,
     alignItems: "center",
     justifyContent: "center",
+    marginTop: 30,
   },
 
   title: {
@@ -14,4 +15,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export {styles}
+export { styles };

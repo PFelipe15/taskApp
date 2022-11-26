@@ -2,10 +2,10 @@ import React from "react";
 import { View, Text } from "react-native";
 import { styles } from "./styles";
 
-function TitleApp() {
+function TitleApp({title}) {
   return (
     <View style={styles.header}>
-      <Text style={styles.title}>ULTIMAS TAREFAS</Text>
+      <Text style={styles.title}>{title}</Text>
     </View>
   );
 }

@@ -1,20 +1,22 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useEffect } from "react";
 
-  import { styles} from './styles';
+import { Text, View, TouchableOpacity } from "react-native";
+import { styles } from "./styles";
 
-const TaskInput = () => {
+const TaskInput = ({ title, task }) => {
   return (
     <View style={styles.taskContainer}>
+      <TouchableOpacity style={styles.btnTask}>
       <View style={styles.taskTitleContainer}>
-        <Text style={styles.titleTask}>TITLE</Text>
+        <Text style={styles.titleTask}>{title}</Text>
       </View>
-      <View style={styles.boxTask}>
-        <Text style={styles.task}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
-          usmod tempor incididunt ut labore et dolore magna
-        </Text>
-      </View>
+
+        <View style={styles.boxTask}>
+          <Text numberOfLines={3} style={styles.task}>
+            {task}
+          </Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
