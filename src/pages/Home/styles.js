@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     display: "flex",
     width: "100%",
     height: "100%",
-    backgroundColor: "#16B9DD",
+    backgroundColor: "#4335f4",
   },
 
   main: {
