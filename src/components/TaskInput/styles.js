@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   taskContainer: {
-    display: "flex",
     flexDirection: "column",
     height: 137,
     marginTop: 40,
@@ -12,9 +11,14 @@ const styles = StyleSheet.create({
     width: "100%",
   },
 
+  btnDelete: {
+    alignItems: "flex-end",
+    paddingHorizontal: 15,
+  },
+
   taskTitleContainer: {
     width: "100%",
-    maxWidth: "100%",
+    maxWidth: "50%",
     height: 35,
     backgroundColor: "rgba(0, 0, 0, 0.6)",
     borderRadius: 14,
